@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  background-color: rgb(228, 242, 240);
+}
+.section {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-top: 2rem;
+}
+.title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.underline {
+  width: 100px;
+  height: 5px;
+  background-color: deepskyblue;
+}
+.jobs-center {
+  margin-top: 4rem;
+}
+.job-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.job-info h3:nth-child(2) {
+  background-color: rgb(197, 223, 225);
+  padding: 0.5rem 0.2rem;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.job-info h3:first-child {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  background-color: transparent;
+}
+.job-date {
+  color: grey;
+  letter-spacing: 2px;
+}
+.job-desc {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.job-icon {
+  color: deepskyblue;
+  font-size: 20px;
+}
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+}
+.btn.active {
+  color: deepskyblue;
+  border-bottom: 3px solid deepskyblue;
+}
+@media screen and (min-width: 800px) {
+  .jobs-center {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .btn-container {
+    margin: 0;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
